@@ -23,6 +23,27 @@ body{
         padding: 2%;
         justify-content: center;
     }
+    .dirFooter{
+        width: 100%;
+        
+        
+    }
+    .legendaHab{
+        width: 100%;
+    }
+    .habi{
+        width: 100%;
+        margin-left: 80px;
+    }
+    .habComport{
+        width: 100%;
+       
+    }
+    .esquerda{
+        width: 100%;
+       margin-left: 60px;
+    }
+   
 }
 
 @media (min-width: 601) and (max-width: 768px){
@@ -112,7 +133,7 @@ html {
     flex-wrap: wrap;
 }
 /*
-.tituloAcademia h3{
+.tituloAcademia h3{container
     color: #3c3e41;
 }
 */
@@ -454,8 +475,10 @@ hr{
 .legendaHab{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+    
 }
 
 .vermelho{
@@ -463,7 +486,9 @@ hr{
     height: 15px;
     background-color: #DF2935;
     margin-right: 15px;
-    margin-left: 5px;
+    
+    margin-left: 40px;
+    
 
 }
 .amarelo{
@@ -471,14 +496,15 @@ hr{
     height: 15px;
     background-color: #e7a01c;
     margin-right: 15px;
-    margin-left: 5px;
+   
+    margin-left: 30px;
     
 }
 .verde{
     width: 15px;
     height: 15px;
     background-color: #3db632;
-    margin-left: 5px;
+    margin-left: 40px;
     
 }
 
@@ -554,6 +580,7 @@ hr{
     padding-right: 50px;
 
 }
+
 .habilidades .title{
     padding-bottom: 30px;
 }
@@ -570,7 +597,7 @@ hr{
 
 .rodape{
     background-color: #fdd64b;   
-    padding: 20px;
+    padding: 50px;
    /* margin-bottom: 10px;*/
     /*border-radius: 0px 0px 20px 20px;*/
     display: flex;
@@ -582,15 +609,29 @@ hr{
     text-align: center;
     font-weight: 800;
     color: #5f6063;
+    
 }
-
+/*
 .esqFooter h3,a{
     color: #3c3e41;
 }
+*/
 .ultimaDiv{
     background-color: #ECF0F3;
 }
 
 .espacamento{
     padding-top: 200px;
+}
+
+#link,#git{
+    text-decoration: none;
+    color: #5f6063;
+   
+}
+#link,#git a:visited,a:hover,a:active{
+   
+    color: #5f6063;
+   
+
 }
