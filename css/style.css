@@ -1,0 +1,572 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /*max-width: 1024px;*/
+    margin: 0 auto;
+/*background-image: url(../img/fundo.jpg);*/
+    /*background-color: #364b74;*/
+    /*background-color: #1D3461;*/
+    font-family: 'Monda', sans-serif;
+    box-shadow: 3px 3px 5px #321f5f;
+    border-radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}
+
+.titulos{
+    text-align: center;
+}
+
+/*INÍCIO CABECALHO------------------------------*/
+.cabecalho{
+    background-color: #fdd64b;
+    /*margin-top: 5px;*/
+    /*border-radius: 20px 20px 0px 0px;*/
+   
+    
+}
+.cabecalho ul{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 30px;
+}
+
+.cabecalho ul li{
+    margin: 20px;
+}
+
+.cabecalho ul li a{
+    color: #321f5f;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Monda', sans-serif;
+   
+    
+}
+
+.cabecalho ul li a:hover{
+    border-bottom: 2px solid #DF2935;
+  }
+
+
+
+
+/*INÍCIO INTROCUCAO----------------------------------------------*/
+.post-list.esquerda{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.post-img img{
+    justify-content: center;
+} 
+.post-list.direita{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*
+.tituloAcademia h3{
+    color: #3c3e41;
+}
+*/
+
+
+.adicionais{
+    text-align: center;
+    width: 200px;
+}
+
+.adicionais p{
+    color: #5f6063;
+}
+
+.adicionais h4{
+    color: #3c3e41;
+}
+
+.container{
+    background-color: #ECF0F3;
+    padding: 0px 60px;
+    
+}
+
+#cont1{
+    padding-top: 10px;
+}
+
+
+hr{
+    max-width: 650px;
+    margin: auto;
+    border-color: #fefefe;
+}
+
+.marcadorHr{
+    background-color: #ECF0F3;
+    padding: 100px;
+}
+
+.post-list{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    justify-content: center;
+}
+
+
+
+.post-list h1,h2,h3,h4{
+    color: #3c3e41;
+}
+
+
+.post-desc{
+    max-width: 450px;
+}
+
+.post-desc h1{
+    padding: 10px;
+}
+
+.post-desc h2{
+    margin-left: 5px;
+}
+
+.post-desc h3{
+    margin-left: 7px;
+}
+
+.post-desc p{
+    color: #5f6063;
+    margin-left: 25px;
+}
+
+.outrasInfo{
+    padding-top: 10px;
+}
+
+.tituloAcademia{
+    margin-left: 7px;
+}
+/*
+.tituloAcademia{
+    color: #3c3e41;
+}
+.academia{
+    color: #5f6063;
+}
+
+.hat{
+    width: 20%;
+}
+
+*/
+
+
+
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+/*INÍCIO EVENTOS-----------------------------------------------*/
+
+.eventos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.item1 img{
+    margin-left: 60px;
+}
+
+
+.title h2{
+    color: #3c3e41;
+}
+
+.item1{
+   /*DEGRADE*/
+    background-image: linear-gradient(to bottom right,#dfe4e9,#fefefe);
+    max-width: 400px;
+    max-height: 400px;
+    /*border-radius: 12px;*/
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 8px 8px 8px #dee4ec;
+    display: flex;
+    align-items: center;
+}
+
+.item1 .post-desc{
+    margin-right: 20px;
+    height: 200px;
+    padding-bottom: 20px;
+}
+
+
+/*
+.item1:hover{
+    background-color: #ee083a;NAO ESTÁ MUDANDO A COR DA DIV
+    transition: 0.5s;
+    opacity: 0.7;
+    
+}
+*/
+
+
+
+.item1 h4{
+    color: #201736;
+}
+
+.item2 h4{
+    color: #201736;    
+}
+
+
+
+.eventos .item1 img{
+    width: 20%;    
+}
+
+
+.eventos p{
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+.eventos h4{
+    margin-top: 15px;
+}
+
+.eventos a{
+    color: blue;
+    text-decoration: none;
+    font-weight: 700;
+}
+.ultimosEventos{
+    padding-bottom: 30px;
+}
+.ultimosEventos .title{
+    padding-bottom: 30px;
+}
+.item1:hover{
+    background-image: linear-gradient(to bottom right,#dfe4e9,#dbd7d7);    
+    color: white;
+    box-shadow: 1px 1px 5px #b6b3b3;
+    
+    
+}
+/*INÍCIO PROJETOS------------------------------*/
+
+.item2{
+    box-shadow: 8px 8px 8px #dee4ec;
+    background-image: linear-gradient(to bottom right,#dfe4e9,#fefefe);    
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 5px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.item2 p{
+    color: #3c3e41;
+    text-align:center;
+}
+
+.ultimosProjetos .title{
+    padding-top: 70px;
+}
+.projetos{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.projetos .item2 img{
+    width: 20%;
+}
+
+.projetos p{
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+.projetos h4{
+    margin-top: 15px;
+}
+
+.projetos a{
+    color: blue;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.ultimosProjetos{
+    padding-bottom: 30px;
+}
+
+.ultimosProjetos .title{
+    padding-bottom: 30px;
+}
+/*
+.item2:hover{
+    background-image: linear-gradient(to bottom right,#DF2935,#DF2935);    
+    color: white;
+    box-shadow: 1px 1px 5px #b65a60;
+    
+    
+}
+*/
+.item2:hover{
+    background-image: linear-gradient(to bottom right,#dfe4e9,#dbd7d7);    
+    color: white;
+    box-shadow: 1px 1px 5px #b6b3b3;
+    
+    
+}
+
+
+
+
+/*INÍCIO TECNOLOGIAS---------------------------------------------------*/
+.lingEFerramentas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.item3{
+    box-shadow: 8px 8px 8px #dee4ec;
+    background-image: linear-gradient(to bottom right,#dfe4e9,#fefefe);    
+    width: 160px;
+    height: 50px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 5px;   
+    display: flex;    
+    align-items: center;
+    color: #3c3e41;
+}
+
+
+.imgTecno{
+   /* margin-left: 30px;*/
+   text-align: center;
+}
+.descTecno{
+    margin-right: 30px;
+    text-align: start;
+    
+}
+
+
+
+
+.tecnologias .item3 img{
+    width: 30%;
+}
+
+.tecnologias{
+    padding-bottom: 30px;
+}
+
+.tecnologias .title{
+    padding-bottom: 30px;
+}
+
+.item3:hover{
+    background-image: linear-gradient(to bottom right,#DF2935,#DF2935);    
+    color: white;
+    /*box-shadow: 1px 1px 5px #b65a60;*/
+    box-shadow: 1px 1px 5px #8b4449;
+    
+}
+
+
+/*INICIO HABILIDADES COMPORTAMENTAIS-------------------------------------*/
+
+.habi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.legendaHab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.vermelho{
+    width: 15px;
+    height: 15px;
+    background-color: #DF2935;
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+.amarelo{
+    width: 15px;
+    height: 15px;
+    background-color: #e7a01c;
+    margin-right: 15px;
+    margin-left: 5px;
+    
+}
+.verde{
+    width: 15px;
+    height: 15px;
+    background-color: #3db632;
+    margin-left: 5px;
+    
+}
+
+.habComport p{
+    color: #3c3e41;
+}
+
+.fundoDiv{    
+    width: 200px;
+    height: 10px;
+    background-color: #cdd0d8;
+    margin-bottom: 5px;    
+    border-radius: 5px;
+   
+}
+
+.frenteDiv{
+    width: 70px;
+    height: 8px;
+    background-image: linear-gradient(to right,#fffafb,#DF2935);
+    align-items: center;
+    position: absolute;
+    margin-top: 1px;
+    
+    border-radius: 5px;
+    
+}
+
+#comuInter{
+    width: 135px;
+    background-image: linear-gradient(to right,#fffafb,#e7a01c);
+}
+#lider{
+    width: 60px;
+}
+#criat{
+    width: 110px;
+    background-image: linear-gradient(to right,#fffafb,#e7a01c);
+}
+#proat{
+    width: 140px;
+    background-image: linear-gradient(to right,#fffafb,#e7a01c);
+}
+
+#resil{
+    width: 130px;
+    background-image: linear-gradient(to right,#fffafb,#e7a01c);
+}
+#trabEqui{
+    width: 170px;
+    background-image: linear-gradient(to right,#fffafb,#3db632);
+}
+#organ{
+    width: 175px;
+    background-image: linear-gradient(to right,#fffafb,#3db632);
+}
+#resolConfli{
+    width: 70px;
+}
+#empatia{
+    width: 150px;
+    background-image: linear-gradient(to right,#fffafb,#e7a01c);
+}
+
+
+
+
+
+
+.botaoTopo{
+    background-color: #ECF0F3;
+    text-align: right;
+    padding-right: 50px;
+
+}
+.habilidades .title{
+    padding-bottom: 30px;
+}
+
+
+
+.botaoTopo img:hover{
+    background-color: #c9a1da;
+    border-radius: 100%;
+    
+}
+
+/*INÍCIO FOOTER-------------------------------------------------*/
+
+.rodape{
+    background-color: #fdd64b;   
+    padding: 20px;
+   /* margin-bottom: 10px;*/
+    /*border-radius: 0px 0px 20px 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+.rodape p{
+    text-align: center;
+    font-weight: 800;
+    color: #5f6063;
+}
+
+.esqFooter h3,a{
+    color: #3c3e41;
+}
+.ultimaDiv{
+    background-color: #ECF0F3;
+}
+
+.espacamento{
+    padding-top: 200px;
+}

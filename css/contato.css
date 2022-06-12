@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #364b74;
+    font-family: 'Monda', sans-serif;
+    
+   
+}
+
+
+.cabecalho{
+    background-color: #fdd64b;
+    margin-top: 5px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+.cabecalho ul{
+    display: flex;
+    justify-content:start;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 8px;
+}
+
+.cabecalho ul li{
+    margin: 20px;
+}
+
+.cabecalho ul li a{
+    color: #321f5f;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Monda', sans-serif;
+}
+
+/*FIM DO CABECALHO------------------------------*/
+
+.container{
+    background-color: #ECF0F3;
+    padding: 0 60px;
+    height: 768px;
+}
+
+
+
+.formulario{
+    
+    padding: 35px;
+    margin-top: 10px;
+}
+
+.formulario label{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.campo.mensagem{
+    width:100px;
+    height: 100px;
+}
+
+.formulario input{
+    padding: 2px 7px;
+}
+
+#mensagem{
+    min-width: 185px;
+    max-width: 185px;
+    min-height: 185px;
+    max-height: 185px;
+    
+}
+
+
+/*INÍCIO FOOTER-------------------*/
+
+.rodape{
+    background-color: #fdd64b;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 20px 20px;
+    
+    
+}
+.rodape p{
+    text-align: center;
+    font-weight: 800;
+    color: #201736;
+
+}
