@@ -13,6 +13,28 @@ body{
     border-radius: 20px;
 }
 
+@media (max-width: 600px){
+    .post-list{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2%;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 601) and (max-width: 768px){
+
+}
+@media (min-width: 769) and (max-width: 992){
+
+}
+@media (min-width: 993){
+
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -65,6 +87,16 @@ html {
 
 
 /*INÍCIO INTROCUCAO----------------------------------------------*/
+.post-list{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    justify-content: center;
+}
+
 .post-list.esquerda{
     display: flex;
     flex-direction: column;
@@ -121,15 +153,7 @@ hr{
     padding: 100px;
 }
 
-.post-list{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2%;
-    justify-content: center;
-}
+
 
 
 
