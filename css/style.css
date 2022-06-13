@@ -3,11 +3,7 @@
     margin: 0;
 }
 body{
-    /*max-width: 1024px;*/
     margin: 0 auto;
-/*background-image: url(../img/fundo.jpg);*/
-    /*background-color: #364b74;*/
-    /*background-color: #1D3461;*/
     font-family: 'Monda', sans-serif;
     box-shadow: 3px 3px 5px #321f5f;
     border-radius: 20px;
@@ -25,8 +21,6 @@ body{
     }
     .dirFooter{
         width: 100%;
-        
-        
     }
     .legendaHab{
         width: 100%;
@@ -37,7 +31,6 @@ body{
     }
     .habComport{
         width: 100%;
-       
     }
     .esquerda{
         width: 100%;
@@ -45,7 +38,7 @@ body{
     }
    
 }
-
+/*
 @media (min-width: 601) and (max-width: 768px){
 
 }
@@ -55,6 +48,7 @@ body{
 @media (min-width: 993){
 
 }
+*/
 
 html {
   scroll-behavior: smooth;
@@ -71,10 +65,6 @@ html {
 /*INÍCIO CABECALHO------------------------------*/
 .cabecalho{
     background-color: #fdd64b;
-    /*margin-top: 5px;*/
-    /*border-radius: 20px 20px 0px 0px;*/
-   
-    
 }
 .cabecalho ul{
     display: flex;
@@ -96,16 +86,31 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Monda', sans-serif;
-   
-    
+}
+.cabecalho ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #DF2935;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+.cabecalho ul li:hover::after{
+    width: 100%;
 }
 
-.cabecalho ul li a:hover{
+/*
+.cabecalho ul li a:hover::after{
     border-bottom: 2px solid #DF2935;
+    width: 0%;
+    transition: 0.5s;
   }
-
-
-
+  .cabecalho ul li a:hover::after{
+    border-bottom: 2px solid #DF2935;
+    width: 100%;
+  }
+  */
 
 /*INÍCIO INTROCUCAO----------------------------------------------*/
 .post-list{
@@ -155,13 +160,11 @@ html {
 .container{
     background-color: #ECF0F3;
     padding: 0px 60px;
-    
 }
 
 #cont1{
-    padding-top: 10px;
+    padding-top: 10px; 
 }
-
 
 hr{
     max-width: 650px;
@@ -174,14 +177,10 @@ hr{
     padding: 100px;
 }
 
-
-
-
-
 .post-list h1,h2,h3,h4{
     color: #3c3e41;
+    
 }
-
 
 .post-desc{
     max-width: 450px;
@@ -211,30 +210,10 @@ hr{
 .tituloAcademia{
     margin-left: 7px;
 }
-/*
-.tituloAcademia{
-    color: #3c3e41;
-}
-.academia{
-    color: #5f6063;
-}
-
-.hat{
-    width: 20%;
-}
-
-*/
-
-
-
 
 .reverse{
     flex-direction: row-reverse;
 }
-
-
-
-
 
 /*INÍCIO EVENTOS-----------------------------------------------*/
 
@@ -249,7 +228,6 @@ hr{
     margin-left: 60px;
 }
 
-
 .title h2{
     color: #3c3e41;
 }
@@ -259,7 +237,6 @@ hr{
     background-image: linear-gradient(to bottom right,#dfe4e9,#fefefe);
     max-width: 400px;
     max-height: 400px;
-    /*border-radius: 12px;*/
     border-radius: 20px;
     padding: 10px;
     margin-top: 5px;
@@ -274,18 +251,6 @@ hr{
     padding-bottom: 20px;
 }
 
-
-/*
-.item1:hover{
-    background-color: #ee083a;NAO ESTÁ MUDANDO A COR DA DIV
-    transition: 0.5s;
-    opacity: 0.7;
-    
-}
-*/
-
-
-
 .item1 h4{
     color: #201736;
 }
@@ -294,12 +259,9 @@ hr{
     color: #201736;    
 }
 
-
-
 .eventos .item1 img{
     width: 20%;    
 }
-
 
 .eventos p{
     margin: 20px 0;
@@ -322,11 +284,10 @@ hr{
     padding-bottom: 30px;
 }
 .item1:hover{
-    background-image: linear-gradient(to bottom right,#dfe4e9,#dbd7d7);    
+    background-image: linear-gradient(to bottom right,#fefefe,#dfe4e9);    
     color: white;
     box-shadow: 1px 1px 5px #b6b3b3;
-    
-    
+    transition: 0.5s;
 }
 /*INÍCIO PROJETOS------------------------------*/
 
@@ -385,25 +346,13 @@ hr{
 .ultimosProjetos .title{
     padding-bottom: 30px;
 }
-/*
+
 .item2:hover{
-    background-image: linear-gradient(to bottom right,#DF2935,#DF2935);    
-    color: white;
-    box-shadow: 1px 1px 5px #b65a60;
-    
-    
-}
-*/
-.item2:hover{
-    background-image: linear-gradient(to bottom right,#dfe4e9,#dbd7d7);    
+    background-image: linear-gradient(to bottom right,#fefefe,#dfe4e9);    
     color: white;
     box-shadow: 1px 1px 5px #b6b3b3;
-    
-    
+    transition: 0.5s;
 }
-
-
-
 
 /*INÍCIO TECNOLOGIAS---------------------------------------------------*/
 .lingEFerramentas{
@@ -412,7 +361,6 @@ hr{
     justify-content: center;
     gap: 50px;
 }
-
 
 .item3{
     box-shadow: 8px 8px 8px #dee4ec;
@@ -429,7 +377,6 @@ hr{
 
 
 .imgTecno{
-   /* margin-left: 30px;*/
    text-align: center;
 }
 .descTecno{
@@ -437,9 +384,6 @@ hr{
     text-align: start;
     
 }
-
-
-
 
 .tecnologias .item3 img{
     width: 30%;
@@ -456,11 +400,9 @@ hr{
 .item3:hover{
     background-image: linear-gradient(to bottom right,#DF2935,#DF2935);    
     color: white;
-    /*box-shadow: 1px 1px 5px #b65a60;*/
     box-shadow: 1px 1px 5px #8b4449;
-    
+    transition: 0.5s;
 }
-
 
 /*INICIO HABILIDADES COMPORTAMENTAIS-------------------------------------*/
 
@@ -477,8 +419,7 @@ hr{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
 }
 
 .vermelho{
@@ -486,26 +427,20 @@ hr{
     height: 15px;
     background-color: #DF2935;
     margin-right: 15px;
-    
     margin-left: 40px;
-    
-
 }
 .amarelo{
     width: 15px;
     height: 15px;
     background-color: #e7a01c;
     margin-right: 15px;
-   
     margin-left: 30px;
-    
 }
 .verde{
     width: 15px;
     height: 15px;
     background-color: #3db632;
     margin-left: 40px;
-    
 }
 
 .habComport p{
@@ -518,7 +453,6 @@ hr{
     background-color: #cdd0d8;
     margin-bottom: 5px;    
     border-radius: 5px;
-   
 }
 
 .frenteDiv{
@@ -528,9 +462,7 @@ hr{
     align-items: center;
     position: absolute;
     margin-top: 1px;
-    
     border-radius: 5px;
-    
 }
 
 #comuInter{
@@ -569,28 +501,19 @@ hr{
     background-image: linear-gradient(to right,#fffafb,#e7a01c);
 }
 
-
-
-
-
-
 .botaoTopo{
     background-color: #ECF0F3;
     text-align: right;
     padding-right: 50px;
-
 }
 
 .habilidades .title{
     padding-bottom: 30px;
 }
 
-
-
 .botaoTopo img:hover{
     background-color: #c9a1da;
     border-radius: 100%;
-    
 }
 
 /*INÍCIO FOOTER-------------------------------------------------*/
@@ -598,8 +521,6 @@ hr{
 .rodape{
     background-color: #fdd64b;   
     padding: 50px;
-   /* margin-bottom: 10px;*/
-    /*border-radius: 0px 0px 20px 20px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -611,11 +532,7 @@ hr{
     color: #5f6063;
     
 }
-/*
-.esqFooter h3,a{
-    color: #3c3e41;
-}
-*/
+
 .ultimaDiv{
     background-color: #ECF0F3;
 }
@@ -630,8 +547,5 @@ hr{
    
 }
 #link,#git a:visited,a:hover,a:active{
-   
     color: #5f6063;
-   
-
 }
