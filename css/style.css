@@ -3,10 +3,9 @@
     margin: 0;
 }
 body{
+  
     margin: 0 auto;
     font-family: 'Monda', sans-serif;
-    box-shadow: 3px 3px 5px #321f5f;
-    border-radius: 20px;
 }
 
 @media (max-width: 600px){
@@ -72,17 +71,17 @@ html {
     flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
-    padding: 30px;
+    padding: 5px;
 }
 
 .cabecalho ul li{
-    margin: 20px;
+    margin: 10px;
 }
 
 .cabecalho ul li a{
-    color: #321f5f;
+    color: #222e50;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Monda', sans-serif;
@@ -92,6 +91,8 @@ html {
     width: 0%;
     height: 2px;
     background: #DF2935;
+    /*background: #941b0c;*/
+    
     display: block;
     margin:auto;
     transition: 0.5s;
@@ -100,19 +101,10 @@ html {
     width: 100%;
 }
 
-/*
-.cabecalho ul li a:hover::after{
-    border-bottom: 2px solid #DF2935;
-    width: 0%;
-    transition: 0.5s;
-  }
-  .cabecalho ul li a:hover::after{
-    border-bottom: 2px solid #DF2935;
-    width: 100%;
-  }
-  */
-
 /*INÍCIO INTROCUCAO----------------------------------------------*/
+#luizlopes{
+    color: #e76c2e;
+}
 .post-list{
     display: flex;
     flex-direction: row;
@@ -123,67 +115,23 @@ html {
     justify-content: center;
 }
 
-.post-list.esquerda{
+.post-list .esquerda,.post-list .direita{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
-
-.post-img img{
-    justify-content: center;
-} 
-.post-list.direita{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-/*
-.tituloAcademia h3{container
-    color: #3c3e41;
-}
-*/
-
-
-.adicionais{
-    text-align: center;
-    width: 200px;
-}
-
-.adicionais p{
-    color: #5f6063;
-}
-
-.adicionais h4{
-    color: #3c3e41;
-}
-
-.container{
-    background-color: #ECF0F3;
-    padding: 0px 60px;
 }
 
 #cont1{
-    padding-top: 10px; 
-}
-
-hr{
-    max-width: 650px;
-    margin: auto;
-    border-color: #fefefe;
-}
-
-.marcadorHr{
-    background-color: #ECF0F3;
-    padding: 100px;
+    background-color: #222e50;
 }
 
 .post-list h1,h2,h3,h4{
-    color: #3c3e41;
+    color: #4e5053;
     
 }
 
 .post-desc{
-    max-width: 450px;
+    max-width: 600px;
 }
 
 .post-desc h1{
@@ -192,28 +140,118 @@ hr{
 
 .post-desc h2{
     margin-left: 5px;
+    color: #b3b5b7;
+  
 }
 
-.post-desc h3{
+.post-desc h3,.tituloAcademia{
     margin-left: 7px;
 }
 
 .post-desc p{
-    color: #5f6063;
+    color: #b8c5d3;
     margin-left: 25px;
 }
 
-.outrasInfo{
-    padding-top: 10px;
+/*INÍCIO FORMAÇÃO PROFISSIONAL-----------*/
+
+.formacaoPro{
+    display:flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e1e2ef;
+    min-height: 500px;
+    gap: 30px;
+    margin: 0 auto;
+    align-items: baseline;
+}
+.academica, .cursos,.idiomas{
+   
+   text-align: center;
+    max-width: 350px;
+    min-height: 220px;
+    max-height: 400px;
+    padding: 20px;
+    background-color: #d6d8f2;
+    box-shadow: 1px 1px 5px #c4c4c6;
+    margin-top: 130px;
+    border-radius: 15px;
+    font-size: 14px;
+    
+   
+}
+.academica h2, .cursos h2, .idiomas h2{
+    color: #e57a44;
+}
+.academica p, .cursos p, .idiomas p{
+    color: #4e5053;
 }
 
-.tituloAcademia{
-    margin-left: 7px;
+
+/*INÍCIO EXPERIÊNCIAS---------------------*/
+/*
+.expProfissional{
+    padding: 70px;
+    width: 350px;
+    display:flex ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+  
+}
+*/
+.expProTitulo{
+    text-align: center;
+    padding-top: 30px;
+    
 }
 
-.reverse{
-    flex-direction: row-reverse;
+.expProTitulo h2{
+    color: #e57a44;
 }
+
+.cont2{
+    background-color: #d6d8f2;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+   
+.empresas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    justify-content: center;
+   
+}
+
+.guardiao, .hf{
+    max-width: 400px;
+    max-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    background-color: #e1e2ef;
+   
+    box-shadow: 1px 1px 5px #c1c4f0;
+    padding: 30px;
+    border-radius: 15px;
+  
+}
+.guardiao p,.hf p{
+    color: #4e5053;
+}
+
+
+
+
 
 /*INÍCIO EVENTOS-----------------------------------------------*/
 
@@ -229,7 +267,8 @@ hr{
 }
 
 .title h2{
-    color: #3c3e41;
+    /*color: #3c3e41;*/
+    color: #e57a44;
 }
 
 .item1{
@@ -250,6 +289,12 @@ hr{
     height: 200px;
     padding-bottom: 20px;
 }
+
+.item1 .post-desc p{/*-----------------------*/
+    color: grey;
+}
+
+
 
 .item1 h4{
     color: #201736;
@@ -277,18 +322,25 @@ hr{
     text-decoration: none;
     font-weight: 700;
 }
+
 .ultimosEventos{
     padding-bottom: 30px;
+    background-color: #e1e2ef;
+   padding-top: 50px;
+    
 }
 .ultimosEventos .title{
     padding-bottom: 30px;
 }
 .item1:hover{
     background-image: linear-gradient(to bottom right,#fefefe,#dfe4e9);    
-    color: white;
+    
     box-shadow: 1px 1px 5px #b6b3b3;
     transition: 0.5s;
 }
+
+
+
 /*INÍCIO PROJETOS------------------------------*/
 
 .item2{
@@ -341,6 +393,8 @@ hr{
 
 .ultimosProjetos{
     padding-bottom: 30px;
+    background-color: #e1e2ef;
+    padding-bottom: 50px;
 }
 
 .ultimosProjetos .title{
@@ -353,6 +407,7 @@ hr{
     box-shadow: 1px 1px 5px #b6b3b3;
     transition: 0.5s;
 }
+
 
 /*INÍCIO TECNOLOGIAS---------------------------------------------------*/
 .lingEFerramentas{
@@ -390,7 +445,10 @@ hr{
 }
 
 .tecnologias{
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #d6d8f2;
+    min-height: 300px;
 }
 
 .tecnologias .title{
@@ -404,105 +462,8 @@ hr{
     transition: 0.5s;
 }
 
-/*INICIO HABILIDADES COMPORTAMENTAIS-------------------------------------*/
-
-.habi{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-}
-
-.legendaHab{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 20px; 
-}
-
-.vermelho{
-    width: 15px;
-    height: 15px;
-    background-color: #DF2935;
-    margin-right: 15px;
-    margin-left: 40px;
-}
-.amarelo{
-    width: 15px;
-    height: 15px;
-    background-color: #e7a01c;
-    margin-right: 15px;
-    margin-left: 30px;
-}
-.verde{
-    width: 15px;
-    height: 15px;
-    background-color: #3db632;
-    margin-left: 40px;
-}
-
-.habComport p{
-    color: #3c3e41;
-}
-
-.fundoDiv{    
-    width: 200px;
-    height: 10px;
-    background-color: #cdd0d8;
-    margin-bottom: 5px;    
-    border-radius: 5px;
-}
-
-.frenteDiv{
-    width: 70px;
-    height: 8px;
-    background-image: linear-gradient(to right,#fffafb,#DF2935);
-    align-items: center;
-    position: absolute;
-    margin-top: 1px;
-    border-radius: 5px;
-}
-
-#comuInter{
-    width: 135px;
-    background-image: linear-gradient(to right,#fffafb,#e7a01c);
-}
-#lider{
-    width: 60px;
-}
-#criat{
-    width: 110px;
-    background-image: linear-gradient(to right,#fffafb,#e7a01c);
-}
-#proat{
-    width: 140px;
-    background-image: linear-gradient(to right,#fffafb,#e7a01c);
-}
-
-#resil{
-    width: 130px;
-    background-image: linear-gradient(to right,#fffafb,#e7a01c);
-}
-#trabEqui{
-    width: 170px;
-    background-image: linear-gradient(to right,#fffafb,#3db632);
-}
-#organ{
-    width: 175px;
-    background-image: linear-gradient(to right,#fffafb,#3db632);
-}
-#resolConfli{
-    width: 70px;
-}
-#empatia{
-    width: 150px;
-    background-image: linear-gradient(to right,#fffafb,#e7a01c);
-}
-
 .botaoTopo{
-    background-color: #ECF0F3;
+    background-color: #d6d8f2;
     text-align: right;
     padding-right: 50px;
 }
@@ -512,15 +473,16 @@ hr{
 }
 
 .botaoTopo img:hover{
-    background-color: #c9a1da;
+    background-color: #ab89c1;
     border-radius: 100%;
+    transition: 0.5s;
 }
 
 /*INÍCIO FOOTER-------------------------------------------------*/
 
 .rodape{
     background-color: #fdd64b;   
-    padding: 50px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -533,13 +495,6 @@ hr{
     
 }
 
-.ultimaDiv{
-    background-color: #ECF0F3;
-}
-
-.espacamento{
-    padding-top: 200px;
-}
 
 #link,#git{
     text-decoration: none;
