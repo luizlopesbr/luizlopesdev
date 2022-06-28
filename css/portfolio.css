@@ -45,11 +45,7 @@ html {
     text-transform: uppercase;
     font-family: 'Monda', sans-serif;
 }
-/*
-.cabecalho ul li a:hover{
-    border-bottom: 2px solid #DF2935;
-  }
-*/
+
 .cabecalho ul li::after{
     content: '';
     width: 0%;
@@ -74,6 +70,10 @@ html {
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+    
+}
+.container:nth-child(1){
+    margin-bottom: 30px;
 }
 .fundo{
     max-width: 700px;
@@ -85,10 +85,8 @@ html {
     box-shadow: 8px 8px 8px #dee4ec;
     padding: 50px;
     border-radius: 20px;
-    margin-bottom: 30px;
-    gap:30px
-    
-    
+    margin: auto;
+    gap: 30px;
 }
 
 .fundo:hover{
