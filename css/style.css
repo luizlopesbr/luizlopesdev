@@ -185,11 +185,18 @@ html {
 .empresasItem:nth-child(1){
     margin-bottom: 30px;
 }
-
+.empresasItem h2{
+    color: #4c4e4e;
+}
 .empresasItem p{
     color: #4e5053;
 }
 /*INÍCIO TECNOLOGIAS---------------------------------------------------*/
+.contTecTitle{
+    color: #e76c2e;
+    margin-bottom: 30px;
+}
+
 .lingEFerramentas{
     display: flex;
     flex-wrap: wrap;
