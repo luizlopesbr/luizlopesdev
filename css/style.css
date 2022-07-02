@@ -8,30 +8,30 @@ body{
 }
 @media (max-width: 600px){
     .post-img{
-        margin-left: 17px;
+        margin-left: 5px;
         margin-top: 30px;
     }
     .post-desc{
-        padding: 15px;
+        padding: 5px;
     }
     .formacaoItem,.empresasItem{
         width: 250px;
     }
-   
+    .post-list .direita .cv{
+        margin-left: 26%;
+        margin-bottom: 20px;
+    }
+    #imgItem1,#imgItem2,#imgItem3{
+        display: none;
+    }
+    
 }
-/*
-@media (min-width: 601) and (max-width: 768px){
-}
-@media (min-width: 769) and (max-width: 992){
-}
-@media (min-width: 993){
-}
-*/
 html {
   scroll-behavior: smooth;
 }
 :target {
   scroll-margin-top: .8em;
+  
 }
 .titulos{
     text-align: center;
@@ -72,8 +72,6 @@ html {
     width: 100%;
 }
 /*INÍCIO SOBRE----------------------------------------------*/
-
-
 .post-list{
     display: flex;
     flex-direction: row;
@@ -112,6 +110,30 @@ html {
     color: #b8c5d3;
     margin-left: 25px;
 }
+.cv{
+    width: 160px;
+    height: 20px;
+    padding: 0 0 6px 8px;
+    border-radius: 6px;
+    margin-left:auto;
+    color: #b8c5d3;
+    border: 1px solid #5f6063;
+}
+.cv a{
+    text-decoration: none;
+}
+.cv a:link,a:visited{
+    color: #b8c5d3;
+}
+.cv a:hover{
+    color: #222e50;
+}
+.cv:hover{
+    transition: 0.7s;
+    color: #222e50;
+    font-weight: 600;
+    background-color: #fdd64b;
+}
 /*INÍCIO FORMAÇÃO PROFISSIONAL-----------*/
 .formacaoPro{
     display:flex ;
@@ -119,28 +141,54 @@ html {
     flex-direction: row;
     justify-content: center;
     background-color: #e1e2ef;
-    
-    /*min-height: 500px;*/
     gap: 30px;
     padding: 50px;
 }
 .formacaoItem{
-   /* max-width: 350px;*/
+    position: relative;
+    max-width: 350px;
     height: 100%;
     padding: 20px;
     background-color: #d6d8f2;
     box-shadow: 1px 1px 5px #c4c4c6;
-    
     border-radius: 15px;
     font-size: 14px;
-    
 }
-
 .formacaoItem:nth-child(1),.formacaoItem:nth-child(2){
     margin-bottom: 30px;
 }
 .formacaoItem h2{
     color: #e57a44;
+}
+#tituloItem1{
+    padding-left: 50px;
+}
+#imgItem1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 240px;
+}
+#tituloItem2{
+    padding-left: 50px;
+}
+#imgItem2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 325px;
+}
+#tituloItem3{
+    padding-left: 50px;
+}
+#imgItem3{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 115px;
 }
 .formacaoItem p{
     color: #4e5053;
@@ -155,7 +203,6 @@ html {
 }
 .expProfissional{
     background-color: #d6d8f2;
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -171,7 +218,6 @@ html {
 }
 .empresasItem{
     max-width: 400px;
-    /*max-height: 500px;*/
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +227,6 @@ html {
     padding: 30px;
     border-radius: 15px;
 }
-
 .empresasItem:nth-child(1){
     margin-bottom: 30px;
 }
@@ -196,7 +241,6 @@ html {
     color: #e76c2e;
     margin-bottom: 30px;
 }
-
 .lingEFerramentas{
     display: flex;
     flex-wrap: wrap;
