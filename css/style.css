@@ -58,7 +58,7 @@ html {
 }
 /*INÍCIO CABECALHO------------------------------*/
 .cabecalho{
-    background-color: #111111;
+    background-color: #232222;
 }
 
 .cabecalho ul{
@@ -104,7 +104,7 @@ html {
     flex-wrap: wrap;
     padding: 2%;
     justify-content: center;
-    background-color: #111111;
+    background-color: #232222;
 }
 .post-list .esquerda,.post-list .direita{
     display: flex;
@@ -164,7 +164,7 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-color: #111111;
+    background-color: #232222;
     gap: 30px;
     padding: 50px;
 }
@@ -173,7 +173,7 @@ html {
     max-width: 350px;
     height: 100%;
     padding: 20px;
-    background-color: #1D1D1D;
+    background-color: #2e2e2e;
     box-shadow: 1px 1px 5px #c4c4c6;
     border-radius: 15px;
     font-size: 14px;
@@ -233,7 +233,7 @@ html {
     color: #eeab1a;
 }
 .expProfissional{
-    background-color: #111111;
+    background-color: #232222;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -254,7 +254,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    background-color: #1D1D1D;
+    background-color: #2e2e2e;
     box-shadow: 1px 1px 5px #c1c4f0;
     padding: 30px;
     border-radius: 15px;
@@ -287,7 +287,7 @@ html {
 }
 .item3{
     box-shadow: 1px 1px 5px #c1c4f0;
-    background-image: linear-gradient(to bottom right,#1D1D1D,#1D1D1D);    
+    background-image: linear-gradient(to bottom right,#2e2e2e,#2e2e2e);    
     width: 160px;
     height: 50px;
     border-radius: 15px;
@@ -310,7 +310,7 @@ html {
 .tecnologias{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #111111;
+    background-color: #232222;
     min-height: 300px;
 }
 .tecnologias .title{
@@ -321,7 +321,7 @@ html {
     transition: 0.5s;
 }
 .botaoTopo{
-    background-color: #111111;
+    background-color: #232222;
     text-align: right;
     padding-right: 50px;
     
@@ -333,7 +333,7 @@ html {
 
 /*FORMULÁRIO CONTATO--------------->*/
 .containerContato{
-    background-color: #111111;
+    background-color: #232222;
 }
 .formulario{
     text-align: center;   
@@ -351,27 +351,29 @@ textarea:focus, input:focus {
     outline: 0;
 }
 
-#nome,#email,#assunto{
+#nome, #email, #assunto{
     min-width: 400px;
-    color: #4b4c4e;
     font-size: medium;
+    color:#545556;
 }
 #mensagem{
     width: 400px;
     height: 200px;
-    color: #4b4c4e;
     font-size:large;
+    color:#545556;
 }
 .formCampos{
     padding: 10px;
 }
 
+.formCampos h3{
+    color: #afb2b7;
+}
+
 .formulario h2{
     color: #e9a107;
 }
-.form-label{
-    color: white;
-}
+
 #btnEnviar{
     padding:10px;
     font-weight: 600;
@@ -385,6 +387,7 @@ textarea:focus, input:focus {
 #btnEnviar:hover{
     background-color: #484646;
     color: #e9a107;
+    transition: 0.5s;
     
 }
 
@@ -393,7 +396,7 @@ textarea:focus, input:focus {
 
 /*INÍCIO FOOTER-------------------------------------------------*/
 .rodape{
-    background-color: #1D1D1D;   
+    background-color: #2e2e2e;   
     padding: 10px;
     display: flex;
     flex-wrap: wrap;

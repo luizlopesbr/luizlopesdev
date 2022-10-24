@@ -5,7 +5,7 @@
 body{
     margin: 0 auto;
     font-family: 'Monda', sans-serif;
-    background-color: #111111;
+    background-color: #232222;
 }
 
 html {
@@ -29,7 +29,7 @@ html {
 /*INÍCIO CABECALHO------------------------------*/
 
 .cabecalho{
-    background-color: #111111;
+    background-color: #232222;
 }
 .cabecalho ul{
     display: flex;
@@ -67,10 +67,11 @@ html {
 #titleProjetos{
     color: #e9a107;
     text-align: center;
+    margin-top: 20px;
 }
 
 .container{
-    background-color: #111111;
+    background-color: #232222;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -88,7 +89,7 @@ html {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    background-image: linear-gradient(to bottom right,#1D1D1D,#1D1D1D);
+    background-image: linear-gradient(to bottom right,#2e2e2e,#2e2e2e);
     box-shadow: 1px 1px 3px #898a8b;
     padding: 20px;
     border-radius: 15px;
@@ -112,7 +113,7 @@ html {
 }
 
 .descricao h3{
-    color: #d1d5d8;
+    color: #e0e4e7;
 }
 
 .descricao a{
@@ -123,13 +124,13 @@ html {
     color: #e6e2e2;
 }
 .descricao a:visited{
-    color: #504e4e;
+    color: #767272;
 }
 .descricao a:hover{
     color: #e8cf60;
 }
 .descricao a:active{
-    color: #504e4e;
+    color: #767272;
 }
 
 
@@ -137,7 +138,7 @@ html {
 /*INÍCIO FOOTER-------------------*/
 
 .rodape{
-    background-color: #111111;
+    background-color: #232222;
     padding: 20px;
 }
 .rodape p{
