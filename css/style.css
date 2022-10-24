@@ -27,24 +27,34 @@ body{
     
     .lingEFerramentas .item3{
        margin-top: 30px;
-       margin-right: 8px;
-        
+       margin-right: 8px; 
     }
     
     .formulario #nome,.formulario #email,.formulario #assunto{
         min-width: 300px;
-        
     }
 
-   
     .formulario #mensagem{
         width: 300px;
         height: 200px;
         color: #4b4c4e;
         font-size:large;
+    } 
+    .post-list .direita .cv{
+        width: 140px;
+        height: 22px;
+        padding: 0 0 6px 8px;
+        margin-left: 110px;
+        
     }
-      
+    .direita .cv a{
+       
+        margin-left: 20px;
+        
     
+        
+    }
+
 }
 html {
   scroll-behavior: smooth;
@@ -135,28 +145,29 @@ html {
     margin-left: 25px;
 }
 .cv{
-    width: 110px;
-    height: 20px;
+    width: 140px;
+    height: 22px;
     padding: 0 0 6px 8px;
     border-radius: 6px;
-    margin-left:auto;
     color: #b8c5d3;
-    border: 1px solid #5f6063;
+    /*border: 1px solid #5f6063;*/
+    box-shadow: 1px 1px 5px #c4c4c6;
 }
 .cv a{
     text-decoration: none;
+    margin-left: 18px;
+    color: #b8c5d3;
+
+    
 }
+
 .cv a:link,a:visited{
     color: #b8c5d3;
 }
-.cv a:hover{
-    color: #222e50;
-}
+
 .cv:hover{
-    transition: 0.7s;
-    color: #222e50;
-    font-weight: 600;
-    background-color: #eeab1a;
+    transition: 0.5s;
+    box-shadow: 1px 1px 5px #e7b624;
 }
 /*INÍCIO FORMAÇÃO PROFISSIONAL-----------*/
 .formacaoPro{
@@ -190,7 +201,8 @@ html {
     color: #eeab1a;
 }
 #tituloItem1{
-    padding-left: 50px;
+    padding-left: 10px;
+    text-align: center;
 }
 #imgItem1{
     width: 50px;
@@ -200,7 +212,7 @@ html {
     right: 280px;
 }
 #tituloItem2{
-    padding-left: 50px;
+    padding-left: 55px;
 }
 #imgItem2{
     width: 50px;
@@ -210,7 +222,7 @@ html {
     right: 325px;
 }
 #tituloItem3{
-    padding-left: 50px;
+    padding-left: 70px;
 }
 #imgItem3{
     width: 50px;
