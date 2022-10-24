@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@600&family=Inter:wght@200;300;400;500;600;700&family=Kanit:wght@200&family=Monda:wght@400;700&family=Nunito:wght@300;400;500&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-
+        
         
         
     </head>
@@ -55,7 +55,7 @@
                             
                         </div>
                         <div class="cv">
-                            <a href="doc/Luiz_Lopes.pdf" target="_blank">Download Currículo</a>
+                            <a href="doc/Luiz_Lopes.pdf" target="_blank">Download CV</a>
                             </div>
                         
                        </div>
@@ -77,7 +77,8 @@
                         <h2 id="tituloItem2"><img src="img/certificate-svgrepo-com.svg" id="imgItem2">Cursos em TI</h2></br>
                         <p>• Git / GitHub - O Essencial para iniciantes - Udemy</p></br>
                         <p>• Banco de Dados: Da modelagem à SQL com PostGreSQL - Udemy</p></br>
-                        <p>• Curso Web Moderno Completo com JavaScript 2022 + Projetos - Udemy - Cursando</p>
+                        <p>• Curso Web Moderno Completo com JavaScript 2022 + Projetos - Udemy - Cursando</p><br>
+                        <p>• Segurança em Tecnologia da Informação - E.V. Bradesco</p>
                         
                     </div>
         
@@ -182,6 +183,16 @@
                             <p>GitHub</p>
                         </div>
                     </div>
+
+                    <div class="item3">
+                        <div class="imgTecno">
+                            <img src="img/node-js.png">
+                        </div>
+                        
+                        <div class="descTecno">
+                            <p>Node.js</p>
+                        </div>
+                    </div>
                     
                     <!--
                     <div class="item3">
@@ -210,6 +221,42 @@
 
             </div>
 
+           
+            <!--INÍCIO FORM CONTATO------------->
+
+            <div class="containerContato">
+                <div class="formulario">
+                   
+                    <form action="https://formsubmit.co/luizlopesbr@gmail.com" method="POST" target="_blank">
+                        <h2><a name="ancoraContato">Contato</a></h2><br>
+                        <input type="hidden" name="_next" value="https:luizlopes.dev.br/helpers/msgsucesso.html">
+                        <input type="hidden" name="_autoresponse" value="Recebi sua mensagem e logo responderei. Obrigado pelo contato!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="formCampos">
+                            <h3>Nome</h3>
+                            <input type="text" name="name" id="nome" class="form" placeholder="seu nome" required><br>
+                        </div>
+                        <div class="formCampos">
+                            <h3>E-mail</h3>
+                            <input type="email" name="email" class="form" id="email" placeholder="seu e-mail" required><br>
+                        </div>
+                        <div class="formCampos">
+                            <h3>Assunto</h3>
+                            <input type="text" name="subject" class="form" id="assunto" placeholder="qual assunto?" required><br>
+                        </div>
+                        <div class="formCampos">
+                            <h3>Mensagem</h3>
+                            <textarea name="message" class="form" id="mensagem" placeholder="digite sua mensagem" required></textarea><br>
+                        </div>
+                        <button type="submit" id="btnEnviar">Enviar</button>
+                        
+                   </form>
+                    
+
+                </div>
+            </div>
+            <!--BOTÃO DE TOPO--------------->
+
             <div class="ultimaDiv">
                 <p class="espacamento"></p>
             </div>
@@ -226,23 +273,20 @@
 
         <footer class="rodape">
             <div class="esqFooter">
-                <h3>Contato:</h3>
-                <p><a name="ancoraContato">E-mail: luizlopesbr@gmail.com</a></p>
-               
+                <p><h3><a href="https://github.com/luizlopesbr" id="git" target="_blank">GitHub</a></h3></p>
             </div>
 
             <div class="centerFooter">
-                <p><h3><a href="https://github.com/luizlopesbr" id="git" target="_blank">GitHub</a></h3></p>
                 <p><h3><a href="https://www.linkedin.com/in/luiz-lopes-4a27b0117/" id="link" target="_blank">LinkedIn</a></h3></p>
             </div>
 
             <div class="dirFooter">
-                
                 <p>© 2021 - 2022</p>
             </div>
         
                     
         </footer>
-
+        
     </body>
+    
 </html>

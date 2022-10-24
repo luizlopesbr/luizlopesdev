@@ -25,6 +25,26 @@ body{
         display: none;
     }
     
+    .lingEFerramentas .item3{
+       margin-top: 30px;
+       margin-right: 8px;
+        
+    }
+    
+    .formulario #nome,.formulario #email,.formulario #assunto{
+        min-width: 300px;
+        
+    }
+
+   
+    .formulario #mensagem{
+        width: 300px;
+        height: 200px;
+        color: #4b4c4e;
+        font-size:large;
+    }
+      
+    
 }
 html {
   scroll-behavior: smooth;
@@ -38,32 +58,36 @@ html {
 }
 /*INÍCIO CABECALHO------------------------------*/
 .cabecalho{
-    background-color: #fdd64b;
+    background-color: #111111;
 }
+
 .cabecalho ul{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
-    padding: 5px;
 }
 .cabecalho ul li{
-    margin: 10px;
+    margin: 10px;/*
+    background-color: #1D1D1D;*/
+    border-radius: 5px;
+    padding: 7px;
 }
 .cabecalho ul li a{
-    color: #222e50;
+    color: #fdd64b;
     font-weight: 600;
     font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Monda', sans-serif;
+    
 }
 .cabecalho ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: #DF2935;
+    background: #b3b5b7;
     display: block;
     margin:auto;
     transition: 0.5s;
@@ -80,7 +104,7 @@ html {
     flex-wrap: wrap;
     padding: 2%;
     justify-content: center;
-    background-color: #222e50;
+    background-color: #111111;
 }
 .post-list .esquerda,.post-list .direita{
     display: flex;
@@ -88,7 +112,7 @@ html {
     flex-wrap: wrap;
 }
 .post-list h1{
-    color: #e76c2e;
+    color: #eeab1a;
 }
 .post-list h2,h3,h4{
     color: #4e5053;
@@ -111,7 +135,7 @@ html {
     margin-left: 25px;
 }
 .cv{
-    width: 160px;
+    width: 110px;
     height: 20px;
     padding: 0 0 6px 8px;
     border-radius: 6px;
@@ -132,7 +156,7 @@ html {
     transition: 0.7s;
     color: #222e50;
     font-weight: 600;
-    background-color: #fdd64b;
+    background-color: #eeab1a;
 }
 /*INÍCIO FORMAÇÃO PROFISSIONAL-----------*/
 .formacaoPro{
@@ -140,7 +164,7 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-color: #e1e2ef;
+    background-color: #111111;
     gap: 30px;
     padding: 50px;
 }
@@ -149,16 +173,21 @@ html {
     max-width: 350px;
     height: 100%;
     padding: 20px;
-    background-color: #d6d8f2;
+    background-color: #1D1D1D;
     box-shadow: 1px 1px 5px #c4c4c6;
     border-radius: 15px;
     font-size: 14px;
 }
+.formacaoItem:hover{
+    box-shadow: 1px 1px 5px #e7b624;
+    transition: 0.5s;
+}
+
 .formacaoItem:nth-child(1),.formacaoItem:nth-child(2){
     margin-bottom: 30px;
 }
 .formacaoItem h2{
-    color: #e57a44;
+    color: #eeab1a;
 }
 #tituloItem1{
     padding-left: 50px;
@@ -168,7 +197,7 @@ html {
     height: 50px;
     position: absolute;
     top: 10px;
-    right: 240px;
+    right: 280px;
 }
 #tituloItem2{
     padding-left: 50px;
@@ -191,22 +220,25 @@ html {
     right: 115px;
 }
 .formacaoItem p{
-    color: #4e5053;
+    color: #afb2b7;
+    font-size: medium;
 }
+
 /*INÍCIO EXPERIÊNCIAS---------------------*/
 .expProTitulo{
     text-align: center;
     padding-top: 30px;
 }
 .expProTitulo h2{
-    color: #e57a44;
+    color: #eeab1a;
 }
 .expProfissional{
-    background-color: #d6d8f2;
+    background-color: #111111;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 .empresas{
     display: flex;
     flex-wrap: wrap;
@@ -222,42 +254,48 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    background-color: #e1e2ef;
+    background-color: #1D1D1D;
     box-shadow: 1px 1px 5px #c1c4f0;
     padding: 30px;
     border-radius: 15px;
+}
+.empresasItem:hover{
+    box-shadow: 1px 1px 5px #e7b624;
+    transition: 0.5s;
 }
 .empresasItem:nth-child(1){
     margin-bottom: 30px;
 }
 .empresasItem h2{
-    color: #4c4e4e;
+    color: #ced7d7;
 }
 .empresasItem p{
-    color: #4e5053;
+    
+    /*color: #98A6A6;*/
+    color: #afb2b7;
 }
 /*INÍCIO TECNOLOGIAS---------------------------------------------------*/
 .contTecTitle{
-    color: #e76c2e;
+    color: #eeab1a;
     margin-bottom: 30px;
 }
 .lingEFerramentas{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 .item3{
-    box-shadow: 8px 8px 8px #dee4ec;
-    background-image: linear-gradient(to bottom right,#dfe4e9,#fefefe);    
+    box-shadow: 1px 1px 5px #c1c4f0;
+    background-image: linear-gradient(to bottom right,#1D1D1D,#1D1D1D);    
     width: 160px;
     height: 50px;
-    border-radius: 100px;
+    border-radius: 15px;
     padding: 10px;
     margin-top: 5px;   
     display: flex;    
     align-items: center;
-    color: #3c3e41;
+    color: #e2e6eb;
 }
 .imgTecno{
    text-align: center;
@@ -272,34 +310,90 @@ html {
 .tecnologias{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #e1e2ef;
+    background-color: #111111;
     min-height: 300px;
 }
 .tecnologias .title{
     padding-bottom: 30px;
 }
 .item3:hover{
-    background-image: linear-gradient(to bottom right,#DF2935,#DF2935);    
-    color: white;
-    box-shadow: 1px 1px 5px #8b4449;
+    box-shadow: 1px 1px 5px #e9a107;
     transition: 0.5s;
 }
 .botaoTopo{
-    background-color: #e1e2ef;
+    background-color: #111111;
     text-align: right;
     padding-right: 50px;
+    
 }
 .habilidades .title{
     padding-bottom: 30px;
 }
-.botaoTopo img:hover{
-    background-color: #ab89c1;
-    border-radius: 100%;
-    transition: 0.5s;
+
+
+/*FORMULÁRIO CONTATO--------------->*/
+.containerContato{
+    background-color: #111111;
 }
+.formulario{
+    text-align: center;   
+}
+
+.form{
+    border-radius: 10px;
+    padding: 10px;
+    border-style:hidden;
+    box-shadow: 1px 1px 1px #c1c4f0;
+    
+}
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#nome,#email,#assunto{
+    min-width: 400px;
+    color: #4b4c4e;
+    font-size: medium;
+}
+#mensagem{
+    width: 400px;
+    height: 200px;
+    color: #4b4c4e;
+    font-size:large;
+}
+.formCampos{
+    padding: 10px;
+}
+
+.formulario h2{
+    color: #e9a107;
+}
+.form-label{
+    color: white;
+}
+#btnEnviar{
+    padding:10px;
+    font-weight: 600;
+    border-radius: 5px;
+    border-style: hidden;
+    color: #2c2b2b;
+    background-color: #fcfcfc;
+    width: 100px;
+    
+}
+#btnEnviar:hover{
+    background-color: #484646;
+    color: #e9a107;
+    
+}
+
+
+
+
 /*INÍCIO FOOTER-------------------------------------------------*/
 .rodape{
-    background-color: #fdd64b;   
+    background-color: #1D1D1D;   
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -309,12 +403,12 @@ html {
 .rodape p{
     text-align: center;
     font-weight: 800;
-    color: #5f6063;
+    color: #b3b5b7;
 }
 #link,#git{
     text-decoration: none;
-    color: #5f6063;
+    color: #b3b5b7;
 }
 #link,#git a:visited,a:hover,a:active{
-    color: #5f6063;
+    color: #b3b5b7;
 }

@@ -1,0 +1,25 @@
+body{
+    background-color: #111111;
+}
+
+p{
+    color: #e6e2e2;
+    
+    font-size: x-large;
+}
+a{
+    font-size: large;
+}
+
+a:link{
+    color: #e6e2e2;
+}
+a:visited{
+    color: #504e4e;
+}
+a:hover{
+    color: #e8cf60;
+}
+a:active{
+    color: #504e4e;
+}

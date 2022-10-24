@@ -5,6 +5,7 @@
 body{
     margin: 0 auto;
     font-family: 'Monda', sans-serif;
+    background-color: #111111;
 }
 
 html {
@@ -19,12 +20,16 @@ html {
     .imagem{
        display: none;
     }
+    .fundo{
+        margin-bottom: 30px;
+    }
+   
 }
 
 /*INÍCIO CABECALHO------------------------------*/
 
 .cabecalho{
-    background-color: #fdd64b;
+    background-color: #111111;
 }
 .cabecalho ul{
     display: flex;
@@ -38,7 +43,7 @@ html {
     margin: 10px;
 }
 .cabecalho ul li a{
-    color: #222e50;
+    color: #fdd64b;
     font-weight: 600;
     font-size: 13px;
     text-decoration: none;
@@ -50,9 +55,7 @@ html {
     content: '';
     width: 0%;
     height: 2px;
-    background: #DF2935;
-    /*background: #941b0c;*/
-    
+    background: #b3b5b7;
     display: block;
     margin:auto;
     transition: 0.5s;
@@ -61,51 +64,80 @@ html {
     width: 100%;
 }
 /*INÍCIO BODY-------------------*/
+#titleProjetos{
+    color: #e9a107;
+    text-align: center;
+}
 
 .container{
-    background-color: #ECF0F3;
-    padding: 50px;
+    background-color: #111111;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row;
     justify-content: center;
+    gap: 30px;
+    padding: 50px;
+
     
 }
-.container:nth-child(1){
-    margin-bottom: 30px;
-}
+
 .fundo{
-    max-width: 700px;
+    color: #acafb2;
+    max-width: 450px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    background-image: linear-gradient(to bottom right,#dfe4e9,#fefefe);
-    box-shadow: 8px 8px 8px #dee4ec;
-    padding: 50px;
-    border-radius: 20px;
-    margin: auto;
-    gap: 30px;
+    background-image: linear-gradient(to bottom right,#1D1D1D,#1D1D1D);
+    box-shadow: 1px 1px 3px #898a8b;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+    
+    
 }
 
 .fundo:hover{
-    background-image: linear-gradient(to bottom right,#fefefe,#dfe4e9);    
-    box-shadow: 1px 1px 5px #b6b3b3;
+    
+    box-shadow: 1px 1px 5px #e7b624;
     transition: 0.5s;
 }
 .imagem img{
     width: 100%;
     flex-grow: 1;
+    
 }
 .descricao{
    flex-grow: 2;
 }
 
+.descricao h3{
+    color: #d1d5d8;
+}
+
+.descricao a{
+    text-decoration: none;
+}
+
+.descricao a:link{
+    color: #e6e2e2;
+}
+.descricao a:visited{
+    color: #504e4e;
+}
+.descricao a:hover{
+    color: #e8cf60;
+}
+.descricao a:active{
+    color: #504e4e;
+}
+
+
+
 /*INÍCIO FOOTER-------------------*/
 
 .rodape{
-    background-color: #fdd64b;
+    background-color: #111111;
     padding: 20px;
 }
 .rodape p{
