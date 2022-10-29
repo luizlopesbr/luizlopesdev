@@ -16,42 +16,88 @@ html {
   scroll-margin-top: .8em;
 }
 
-@media (max-width: 600px){
-    .imagem{
-       display: none;
+@media screen and (min-width: 731px){
+    .icon{
+        display: none;
     }
-    .fundo{
-        margin-bottom: 30px;
+    .mobile-menu{
+        display: none;
     }
-   
+    .nav-link-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 730px){
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 0.5rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .botaoTopo img{
+        width: 10%;
+     }
+     .imagem img{
+        display: none;
+     }
 }
 
 /*INÍCIO CABECALHO------------------------------*/
 
-.cabecalho{
-    background-color: #232222;
+
+header{
+    background-color: #2e2e2e;
 }
-.cabecalho ul{
+/*barra navegação------*/
+.nav-bar{
     display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style-type: none;
     padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
-.cabecalho ul li{
-    margin: 10px;
+.nav-list ul{
+    display: flex; 
 }
-.cabecalho ul li a{
-    color: #fdd64b;
-    font-weight: 600;
-    font-size: 13px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Monda', sans-serif;
+.nav-list ul li{
+    margin: 0 10px;
+    list-style-type: none;
+    padding: 7.5px 0px 7.5px 0px;
 }
 
-.cabecalho ul li::after{
+.nav-list ul li a, .mobile-menu ul li a{
+    text-decoration: none;
+    color: #fdd64b;
+}
+
+.nav-list ul li::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -60,9 +106,24 @@ html {
     margin:auto;
     transition: 0.5s;
 }
-.cabecalho ul li:hover::after{
+.nav-list ul li:hover::after{
     width: 100%;
 }
+
+/*menu mobile---------*/
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    text-align: center;
+    display: none;
+}
+
+
+
 /*INÍCIO BODY-------------------*/
 #titleProjetos{
     color: #e9a107;
@@ -133,7 +194,12 @@ html {
     color: #767272;
 }
 
-
+.botaoTopo{
+    background-color: #232222;
+    text-align: right;
+    padding-right: 50px;
+    
+}
 
 /*INÍCIO FOOTER-------------------*/
 

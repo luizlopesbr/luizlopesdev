@@ -11,22 +11,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@600&family=Inter:wght@200;300;400;500;600;700&family=Kanit:wght@200&family=Monda:wght@400;700&family=Nunito:wght@300;400;500&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     </head>
     <body>
-       
+      <span id='topo'></span>
             <header>
-                <nav>
-                  <div class="cabecalho">
+              <div class="nav-bar">
+                <div class="nav-list">
                     <ul>
-                      <li><a href="../index.html">Início</a></li>
-                      <li><a href="../index.html#ancoraFormacao">Formação</a></li>
-                      <li><a href="../index.html#ancoraExperienciaPro">Experiências</a></li>
-                      <li><a href="../index.html#ancoraTecnologias">Tecnologias</a></li>
-                      <li><a href="portfolio.html">Portfólio</a></li>
-                      
-                      <li><a href="../index.html#ancoraContato">Contato</a></li>
-                      
+                      <li class="nav-item"><a href="../index.html">Início</a></li>
+                      <li class="nav-item"><a href="../index.html#ancoraFormacao">Formação</a></li>
+                      <li class="nav-item"><a href="../index.html#ancoraExperienciaPro">Experiências</a></li>
+                      <li class="nav-item"><a href="../index.html#ancoraTecnologias">Tecnologias</a></li>
+                      <li class="nav-item"><a href="portfolio.html">Portfólio</a></li>
+                      <li class="nav-item"><a href="../index.html#ancoraContato">Contato</a></li>
                     </ul>
-                  </div>
-                </nav>  
+                    
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="exibirMenu()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <ul class="nav-link-mobile">
+                  <li class="nav-item"><a href="../index.html">Início</a></li>
+                  <li class="nav-item"><a href="../index.html#ancoraFormacao">Formação</a></li>
+                  <li class="nav-item"><a href="../index.html#ancoraExperienciaPro">Experiências</a></li>
+                  <li class="nav-item"><a href="../index.html#ancoraTecnologias">Tecnologias</a></li>
+                  <li class="nav-item"><a href="portfolio.html">Portfólio</a></li>
+                  <li class="nav-item"><a href="../index.html#ancoraContato">Contato</a></li>
+                </ul>
+            </div> 
             </header>
 
             <h2 id="titleProjetos">Projetos</h2>
@@ -86,11 +99,13 @@
             </div>
             
             
-
+            <div class="botaoTopo">
+              <a href='#topo'><img src="../img/topo.png"></a>
+          </div>
             <footer class="rodape">
               
             </footer>
             
-        
+        <script src="../js/script.js"></script>
     </body>
 </html>

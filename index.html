@@ -17,31 +17,43 @@
     <body>
         <span id='topo'></span>
 
-        <header class="cabecalho">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="#ancoraFormacao">Formação</a></li>
-                    <li><a href="#ancoraExperienciaPro">Experiências</a></li>
-                    <li><a href="#ancoraTecnologias">Tecnologias</a></li>
-                    <li><a href="secoes/portfolio.html">Portfólio</a></li>
+        <header>
+            <div class="nav-bar">
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="index.html">Início</a></li>
+                        <li class="nav-item"><a href="#ancoraFormacao">Formação</a></li>
+                        <li class="nav-item"><a href="#ancoraExperienciaPro">Experiências</a></li>
+                        <li class="nav-item"><a href="#ancoraTecnologias">Tecnologias</a></li>
+                        <li class="nav-item"><a href="secoes/portfolio.html">Portfólio</a></li>
+                        <li class="nav-item"><a href="#ancoraContato">Contato</a></li>
+                    </ul>
                     
-                    <li><a href="#ancoraContato">Contato</a></li>
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="exibirMenu()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </div>
+            
+            <div class="mobile-menu">
+                <ul class="nav-link-mobile">
+                    <li class="nav-item"><a href="index.html">Início</a></li>
+                    <li class="nav-item"><a href="#ancoraFormacao">Formação</a></li>
+                    <li class="nav-item"><a href="#ancoraExperienciaPro">Experiências</a></li>
+                    <li class="nav-item"><a href="#ancoraTecnologias">Tecnologias</a></li>
+                    <li class="nav-item"><a href="secoes/portfolio.html">Portfólio</a></li>
+                    <li class="nav-item"><a href="#ancoraContato">Contato</a></li>
                 </ul>
-            </nav>
+            </div>
+                
         </header>
         
         <main class="main">
-            
-            
                 <div class="item-post post-list">
                     <div class="esquerda">
                         <div class="post-img">
                             <img src="img/fotoAvatar.png" alt="foto de Luiz Lopes">
-                        
                         </div>
-                        
-                        
                     </div>
                 
                     <div class="direita">
@@ -286,7 +298,7 @@
         
                     
         </footer>
-        
+        <script src="js/script.js"></script>
     </body>
     
 </html>
